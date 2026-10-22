@@ -1,0 +1,63 @@
+{
+  "provider": "a2-milk-company",
+  "sources": [
+    "_original/a2-milk-company-careers-openapi.json",
+    "a2-milk-company-openapi.yml"
+  ],
+  "outputs": [
+    "a2-milk-company-article-listing-api-openapi.yml",
+    "a2-milk-company-health-api-openapi.yml",
+    "a2-milk-company-llms-full-txt-api-openapi.yml",
+    "a2-milk-company-llms-txt-api-openapi.yml",
+    "a2-milk-company-recipe-listing-api-openapi.yml",
+    "a2-milk-company-search-api-openapi.yml",
+    "a2-milk-company-sitemap-xml-api-openapi.yml"
+  ],
+  "archived": [
+    "archived openapi/a2-milk-company-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "a2-milk-company-careers-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "a2-milk-company-careers-openapi.json: tagged paths PUT /api/search -> Search",
+    "a2-milk-company-careers-openapi.json: tagged paths POST /api/article-listing -> Article Listing",
+    "a2-milk-company-careers-openapi.json: tagged paths POST /api/recipe-listing -> Recipe Listing",
+    "a2-milk-company-careers-openapi.json: tagged paths GET /llms.txt -> Llms.txt",
+    "a2-milk-company-careers-openapi.json: tagged paths GET /llms-full.txt -> Llms Full.txt",
+    "a2-milk-company-careers-openapi.json: tagged paths GET /sitemap.xml -> Sitemap.xml",
+    "a2-milk-company-careers-openapi.json: tagged paths GET /health -> Health",
+    "a2-milk-company-careers-openapi.json: declared missing tag: Article Listing",
+    "a2-milk-company-careers-openapi.json: declared missing tag: Health",
+    "a2-milk-company-careers-openapi.json: declared missing tag: Llms Full.txt",
+    "a2-milk-company-careers-openapi.json: declared missing tag: Llms.txt",
+    "a2-milk-company-careers-openapi.json: declared missing tag: Recipe Listing",
+    "a2-milk-company-careers-openapi.json: declared missing tag: Search",
+    "a2-milk-company-careers-openapi.json: declared missing tag: Sitemap.xml",
+    "a2-milk-company-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "a2-milk-company-openapi.yml: tagged paths PUT /api/search -> Search",
+    "a2-milk-company-openapi.yml: tagged paths POST /api/article-listing -> Article Listing",
+    "a2-milk-company-openapi.yml: tagged paths POST /api/recipe-listing -> Recipe Listing",
+    "a2-milk-company-openapi.yml: tagged paths GET /llms.txt -> Llms.txt",
+    "a2-milk-company-openapi.yml: tagged paths GET /llms-full.txt -> Llms Full.txt",
+    "a2-milk-company-openapi.yml: tagged paths GET /sitemap.xml -> Sitemap.xml",
+    "a2-milk-company-openapi.yml: tagged paths GET /health -> Health",
+    "a2-milk-company-openapi.yml: declared missing tag: Article Listing",
+    "a2-milk-company-openapi.yml: declared missing tag: Health",
+    "a2-milk-company-openapi.yml: declared missing tag: Llms Full.txt",
+    "a2-milk-company-openapi.yml: declared missing tag: Llms.txt",
+    "a2-milk-company-openapi.yml: declared missing tag: Recipe Listing",
+    "a2-milk-company-openapi.yml: declared missing tag: Search",
+    "a2-milk-company-openapi.yml: declared missing tag: Sitemap.xml",
+    "tag 'Article Listing' spans 2 source specs (a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml): per-path servers applied",
+    "tag 'Health' spans 2 source specs (a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml): per-path servers applied",
+    "tag 'Llms Full.txt' spans 2 source specs (a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml): per-path servers applied",
+    "tag 'Llms.txt' spans 2 source specs (a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml): per-path servers applied",
+    "tag 'Recipe Listing' spans 2 source specs (a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml): per-path servers applied",
+    "tag 'Search' spans 2 source specs (a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml): per-path servers applied",
+    "tag 'Sitemap.xml' spans 2 source specs (a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml): per-path servers applied",
+    "apis.yml register: written (+7 apis, 7 total)"
+  ],
+  "skipped": []
+}

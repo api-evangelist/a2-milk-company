@@ -1,0 +1,36 @@
+generated: '2026-10-21'
+method: searched
+source: https://careers.thea2milkcompany.com/openapi.json
+docs: https://careers.thea2milkcompany.com/llms.txt
+name: The a2 Milk Company Careers public API conventions
+auth_style: none (anonymous; see authentication/a2-milk-company-authentication.yml)
+content_negotiation:
+  description: "Every HTML page on this site also serves Markdown. Send `Accept: text/markdown` to any page URL to get
+    a clean text version of it (`Vary: Accept` is set, so caches keep the two apart)."
+  source: https://careers.thea2milkcompany.com/openapi.json
+read_only: true
+read_only_note: The spec describes the surface as "Read-only HTTP endpoints". searchSite (PUT /api/search), listArticles
+  (POST /api/article-listing) and listRecipes (POST /api/recipe-listing) use write verbs but are query operations;
+  no operation creates, changes or deletes a resource.
+idempotency:
+  coverage: na
+  note: No mutating surface; no Idempotency-Key mechanism is documented.
+reversibility:
+  status: na
+  note: Read-only API; there are no actions to reverse.
+dry_run_mode: na
+pagination:
+  documented: false
+  note: The OpenAPI declares no query or path parameters and no pagination fields.
+versioning:
+  scheme: none documented
+  info_version: 1.0.0
+request_id_tracing:
+  documented: false
+  note: A GET of /health and /openapi.json on 2026-10-21 returned no request-id header.
+rate_limit_signaling:
+  documented: false
+  note: See rate-limits/a2-milk-company-rate-limits.yml.
+error_envelope:
+  documented: false
+  note: The spec documents only 200 responses for every operation.

@@ -1,0 +1,23 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/a2-milk-company/integrations
+- https://zapier.com/apps/the-a2-milk-company/integrations
+- https://n8n.io/integrations/a2-milk-company/
+- https://composio.dev/toolkits/a2-milk-company
+- https://monid.ai/tools/a2-milk-company
+checked:
+- https://careers.thea2milkcompany.com/openapi.json
+- https://careers.thea2milkcompany.com/llms.txt
+- https://thea2milkcompany.com/
+- https://composio.dev/toolkits/a2-milk-company
+- https://monid.ai/tools/a2-milk-company
+- https://n8n.io/integrations/a2-milk-company/
+- https://zapier.com/apps/a2-milk-company/integrations
+- https://zapier.com/apps/the-a2-milk-company/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: A dairy nutrition company; the only API is a read-only careers-site content API. No marketplace listings,
+  integrations page or contract operation naming another service was found. Zapier/Make sweep left to sweep-integration-edges.py.

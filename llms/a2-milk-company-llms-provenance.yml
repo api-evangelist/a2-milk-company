@@ -1,0 +1,6 @@
+generated: '2026-10-21'
+method: probed
+generator: harvest-llms.py
+source: https://careers.thea2milkcompany.com/llms.txt
+bytes: 3093
+note: saved verbatim; the provider's own document

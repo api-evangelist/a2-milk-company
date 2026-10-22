@@ -1,23 +1,195 @@
 aid: a2-milk-company
-name: a2 Milk Company
-description: 'a2 Milk Company is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+name: The a2 Milk Company
+
+description: The a2 Milk Company is a premium branded dairy nutrition company listed on the ASX and NZX. It focuses
+  only on products that contain the A2 beta-casein protein type. Its US consumer brand, a2 Milk®, is sold as 100% real
+  cows' milk from grain- and grass-fed cows. The corporate site (thea2milkcompany.com) carries investor, sustainability,
+  governance and company news, including research on infant formula made with a2-type protein. Its careers site
+  (careers.thea2milkcompany.com) publishes a small read-only OpenAPI 3.1 description, an llms.txt index and an MCP endpoint.
+
 url: https://raw.githubusercontent.com/api-evangelist/a2-milk-company/refs/heads/main/apis.yml
+
+image: https://thea2milkcompany.com/logo.png
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Corporate site thea2milkcompany.com is linked from the a2milk.com footer and names "The a2 Milk Company"
+    (premium branded ASX and NZX-listed dairy nutritional company). No developer, API or docs host was found.
+  evidence:
+  - url: https://a2milk.com/
+    status: 200
+  - url: https://thea2milkcompany.com/
+    status: 200
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Dairy
+- Food and Beverage
+- Nutrition
+- Infant Formula
+- Consumer Goods
+- ASX Listed
+- New Zealand
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: MCPServer
+  url: https://careers.thea2milkcompany.com/mcp/
+- type: AgenticAccess
+  url: agentic-access/a2-milk-company-agentic-access.yml
+- type: Spectral
+  url: rules/a2-milk-company-rules.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Conventions
+  url: conventions/a2-milk-company-conventions.yml
+- type: Conformance
+  url: conformance/a2-milk-company-conformance.yml
+- type: Overlay
+  url: overlays/a2-milk-company-openapi-overlay.yaml
+- type: LLMsTxt
+  url: llms/a2-milk-company-llms.txt
+- type: ToolCrosswalk
+  url: mcp/a2-milk-company-tool-crosswalk.yml
+- type: Hosts
+  url: hosts/a2-milk-company-hosts.yml
+- type: Vendors
+  url: vendors/a2-milk-company-vendors.yml
+- type: Leadership
+  url: https://thea2milkcompany.com/leadership
+- type: DomainSecurity
+  url: security/a2-milk-company-domain-security.yml
 - type: Website
+  url: https://thea2milkcompany.com/
+- type: ConsumerWebsite
   url: https://a2milk.com/
+- type: Blog
+  url: https://a2milk.com/blog
+- type: News
+  url: https://thea2milkcompany.com/latest-company-news
+- type: InvestorRelations
+  url: https://thea2milkcompany.com/investor-centre
+- type: Support
+  url: https://thea2milkcompany.com/contacts
+- type: FAQ
+  url: https://a2milk.com/faq
+- type: Careers
+  url: https://careers.thea2milkcompany.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/thea2milkcompany/
+- type: TermsOfService
+  url: https://thea2milkcompany.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://thea2milkcompany.com/privacy-policy
+
+apis:
+- aid: a2-milk-company:a2-milk-company-article-listing-api
+  name: The a2 Milk Company Article Listing API
+  description: The Article Listing API from The a2 Milk Company — 1 operation(s) for article listing.
+  humanURL: https://careers.thea2milkcompany.com/llms.txt
+  baseURL: https://careers.thea2milkcompany.com
+  tags:
+  - Article Listing
+  properties:
+  - type: OpenAPI
+    url: openapi/a2-milk-company-article-listing-api-openapi.yml
+  - type: LLMsTxt
+    url: https://careers.thea2milkcompany.com/llms.txt
+- aid: a2-milk-company:a2-milk-company-health-api
+  name: The a2 Milk Company Health API
+  description: The Health API from The a2 Milk Company — 1 operation(s) for health.
+  humanURL: https://careers.thea2milkcompany.com/llms.txt
+  baseURL: https://careers.thea2milkcompany.com
+  tags:
+  - Health
+  properties:
+  - type: OpenAPI
+    url: openapi/a2-milk-company-health-api-openapi.yml
+  - type: LLMsTxt
+    url: https://careers.thea2milkcompany.com/llms.txt
+- aid: a2-milk-company:a2-milk-company-llms-full-txt-api
+  name: The a2 Milk Company Llms Full.txt API
+  description: The Llms Full.txt API from The a2 Milk Company — 1 operation(s) for llms full.txt.
+  humanURL: https://careers.thea2milkcompany.com/llms.txt
+  baseURL: https://careers.thea2milkcompany.com
+  tags:
+  - Llms Full.txt
+  properties:
+  - type: OpenAPI
+    url: openapi/a2-milk-company-llms-full-txt-api-openapi.yml
+  - type: LLMsTxt
+    url: https://careers.thea2milkcompany.com/llms.txt
+- aid: a2-milk-company:a2-milk-company-llms-txt-api
+  name: The a2 Milk Company Llms.txt API
+  description: The Llms.txt API from The a2 Milk Company — 1 operation(s) for llms.txt.
+  humanURL: https://careers.thea2milkcompany.com/llms.txt
+  baseURL: https://careers.thea2milkcompany.com
+  tags:
+  - Llms.txt
+  properties:
+  - type: OpenAPI
+    url: openapi/a2-milk-company-llms-txt-api-openapi.yml
+  - type: LLMsTxt
+    url: https://careers.thea2milkcompany.com/llms.txt
+- aid: a2-milk-company:a2-milk-company-recipe-listing-api
+  name: The a2 Milk Company Recipe Listing API
+  description: The Recipe Listing API from The a2 Milk Company — 1 operation(s) for recipe listing.
+  humanURL: https://careers.thea2milkcompany.com/llms.txt
+  baseURL: https://careers.thea2milkcompany.com
+  tags:
+  - Recipe Listing
+  properties:
+  - type: OpenAPI
+    url: openapi/a2-milk-company-recipe-listing-api-openapi.yml
+  - type: LLMsTxt
+    url: https://careers.thea2milkcompany.com/llms.txt
+- aid: a2-milk-company:a2-milk-company-search-api
+  name: The a2 Milk Company Search API
+  description: The Search API from The a2 Milk Company — 1 operation(s) for search.
+  humanURL: https://careers.thea2milkcompany.com/llms.txt
+  baseURL: https://careers.thea2milkcompany.com
+  tags:
+  - Search
+  properties:
+  - type: OpenAPI
+    url: openapi/a2-milk-company-search-api-openapi.yml
+  - type: LLMsTxt
+    url: https://careers.thea2milkcompany.com/llms.txt
+- aid: a2-milk-company:a2-milk-company-sitemap-xml-api
+  name: The a2 Milk Company Sitemap.xml API
+  description: The Sitemap.xml API from The a2 Milk Company — 1 operation(s) for sitemap.xml.
+  humanURL: https://careers.thea2milkcompany.com/llms.txt
+  baseURL: https://careers.thea2milkcompany.com
+  tags:
+  - Sitemap.xml
+  properties:
+  - type: OpenAPI
+    url: openapi/a2-milk-company-sitemap-xml-api-openapi.yml
+  - type: LLMsTxt
+    url: https://careers.thea2milkcompany.com/llms.txt
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 26
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

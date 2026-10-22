@@ -1,0 +1,16 @@
+name: The a2 Milk Company agent skills
+generated: '2026-10-21'
+method: generated
+source: openapi/a2-milk-company-openapi.yml
+api: a2-milk-company:careers-public-api
+skills:
+- name: a2-milk-company-search-site
+  path: skills/a2-milk-company-search-site.md
+  operations: [searchSite, getSitemap]
+- name: a2-milk-company-browse-content
+  path: skills/a2-milk-company-browse-content.md
+  operations: [listArticles, listRecipes]
+- name: a2-milk-company-site-index
+  path: skills/a2-milk-company-site-index.md
+  operations: [getHealth, getLlmsIndex, getLlmsFull, getSitemap]
+provider_published_skills: none found (no AGENTS.md or skills listed in llms.txt)

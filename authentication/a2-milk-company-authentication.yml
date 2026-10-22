@@ -1,0 +1,10 @@
+generated: '2026-10-21'
+method: none
+source: https://careers.thea2milkcompany.com/openapi.json
+docs: https://careers.thea2milkcompany.com/llms.txt
+name: The a2 Milk Company Careers public API authentication
+schemes: []
+anonymous: true
+evidence: "No authentication is required and no personal data is accepted."
+note: The OpenAPI 3.1 description (info.description) states the endpoints need no authentication and declares no
+  securitySchemes or security requirement. No API keys, OAuth or scopes are documented.

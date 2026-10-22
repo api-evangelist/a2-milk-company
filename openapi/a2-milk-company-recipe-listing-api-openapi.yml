@@ -1,0 +1,82 @@
+openapi: 3.2.0
+info:
+  title: A2 Milk Company Recipe Listing API
+  version: 1.0.0
+  description: 'Operations tagged Recipe Listing across 2 of this provider''s published API definitions: a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml. Each path carries the servers of the definition it was published in.'
+servers:
+- url: https://careers.thea2milkcompany.com
+tags:
+- name: Recipe Listing
+paths:
+  /api/recipe-listing:
+    post:
+      operationId: listRecipes
+      summary: Search and filter recipes
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                searchTerm:
+                  type: string
+                  description: Free-text query. Empty string returns everything.
+                page:
+                  type: integer
+                  minimum: 0
+                  default: 0
+                  description: Zero-based page index.
+                limit:
+                  type: integer
+                  minimum: 1
+                  default: 10
+                  description: Results per page.
+                filters:
+                  type: array
+                  items:
+                    type: string
+                  description: Taxonomy category codenames to filter by.
+                sort:
+                  type: string
+                  description: Element codename to sort on.
+                sortDirection:
+                  type: string
+                  enum:
+                  - asc
+                  - desc
+      responses:
+        '200':
+          description: Matching recipes.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: object
+                    properties:
+                      items:
+                        type: array
+                        items:
+                          type: object
+                          additionalProperties: true
+                      totalResults:
+                        type: integer
+                      totalPages:
+                        type: integer
+                    required:
+                    - items
+                    - totalResults
+                    - totalPages
+                required:
+                - success
+      tags:
+      - Recipe Listing
+    servers:
+    - url: https://careers.thea2milkcompany.com
+x-refined-from:
+- a2-milk-company-careers-openapi.json
+- a2-milk-company-openapi.yml

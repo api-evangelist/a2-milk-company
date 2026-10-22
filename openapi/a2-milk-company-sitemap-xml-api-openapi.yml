@@ -1,0 +1,28 @@
+openapi: 3.2.0
+info:
+  title: A2 Milk Company Sitemap.xml API
+  version: 1.0.0
+  description: 'Operations tagged Sitemap.xml across 2 of this provider''s published API definitions: a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml. Each path carries the servers of the definition it was published in.'
+servers:
+- url: https://careers.thea2milkcompany.com
+tags:
+- name: Sitemap.xml
+paths:
+  /sitemap.xml:
+    get:
+      operationId: getSitemap
+      summary: XML sitemap of every indexable URL
+      responses:
+        '200':
+          description: URL set.
+          content:
+            application/xml:
+              schema:
+                type: string
+      tags:
+      - Sitemap.xml
+    servers:
+    - url: https://careers.thea2milkcompany.com
+x-refined-from:
+- a2-milk-company-careers-openapi.json
+- a2-milk-company-openapi.yml

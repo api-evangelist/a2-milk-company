@@ -1,0 +1,91 @@
+name: The a2 Milk Company Careers MCP server
+type: MCPServer
+generated: '2026-10-21'
+method: probed
+source: https://careers.thea2milkcompany.com/mcp/
+status: live
+description: Read-only Streamable HTTP MCP server published by The a2 Milk Company Careers site
+  (careers.thea2milkcompany.com). It is advertised in the site's llms.txt and in /.well-known/mcp. Per the
+  server's own instructions it gives read-only access to site content, does not process orders and does not give
+  medical advice.
+deployment:
+  mode: remote
+  endpoint: https://careers.thea2milkcompany.com/mcp/
+  transport: streamable-http
+  auth: none
+  verified: probed
+serverInfo:
+  name: careers.thea2milkcompany.com
+  title: The a2 Milk Company Careers MCP server
+  version: 1.0.0
+  websiteUrl: https://careers.thea2milkcompany.com
+protocolVersion: '2025-06-18'
+capabilities:
+  tools:
+    listChanged: false
+discovery:
+- url: https://careers.thea2milkcompany.com/.well-known/mcp
+  status: 200
+  content_type: application/json
+- url: https://careers.thea2milkcompany.com/llms.txt
+  status: 200
+  note: Lists the MCP endpoint and says to POST to /mcp/ with the trailing slash, which avoids a redirect that drops the body.
+probes:
+- method: initialize
+  url: https://careers.thea2milkcompany.com/mcp/
+  status: 200
+- method: tools/list
+  url: https://careers.thea2milkcompany.com/mcp/
+  status: 200
+  tools_returned: 4
+tools:
+- name: search_site
+  title: Search the site
+  description: Full-text search across every page on the site — products, articles, recipes and support content.
+    Use this first when you do not already know the URL.
+  inputSchema:
+    type: object
+    properties:
+      query: {type: string, description: What to search for.}
+      limit: {type: integer, minimum: 1, maximum: 50, default: 10}
+      page: {type: integer, minimum: 0, default: 0, description: Zero-based page index.}
+    required: [query]
+    additionalProperties: false
+  source: live tools/list
+- name: list_articles
+  title: List articles
+  description: Browse or filter the site’s articles and guides. Use when the user wants advice or explainer content
+    rather than a specific page.
+  inputSchema:
+    type: object
+    properties:
+      query: {type: string, description: Free-text query. Omit to list all articles.}
+      limit: {type: integer, minimum: 1, maximum: 50, default: 10}
+      page: {type: integer, minimum: 0, default: 0, description: Zero-based page index.}
+      categories: {type: array, items: {type: string}, description: Taxonomy category codenames to filter by.}
+    additionalProperties: false
+  source: live tools/list
+- name: list_recipes
+  title: List recipes
+  description: Browse or filter the site’s recipes.
+  inputSchema:
+    type: object
+    properties:
+      query: {type: string, description: Free-text query. Omit to list all recipes.}
+      limit: {type: integer, minimum: 1, maximum: 50, default: 10}
+      page: {type: integer, minimum: 0, default: 0, description: Zero-based page index.}
+      categories: {type: array, items: {type: string}, description: Taxonomy category codenames to filter by.}
+    additionalProperties: false
+  source: live tools/list
+- name: get_page
+  title: Read a page as Markdown
+  description: Fetch any page on this site and return its content as Markdown. Accepts a path such as `/why-a2/` or
+    a full URL on this domain.
+  inputSchema:
+    type: object
+    properties:
+      url: {type: string, description: Path or absolute URL on this site.}
+    required: [url]
+    additionalProperties: false
+  source: live tools/list
+notes: Only initialize and tools/list were sent. No tool was called.

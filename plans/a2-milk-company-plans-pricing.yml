@@ -1,0 +1,13 @@
+generated: '2026-10-21'
+method: none
+source: https://careers.thea2milkcompany.com/openapi.json
+name: The a2 Milk Company pricing
+audience: unclear
+pricing_basis: none
+published: false
+delivery:
+  model: managed
+plan_count: 0
+plans: []
+note: No API pricing or plans page is published. The careers-site API is anonymous and free to call ("No authentication
+  is required"), but no pricing statement exists, so no plan is recorded.

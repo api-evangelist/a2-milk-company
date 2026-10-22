@@ -1,0 +1,83 @@
+generated: '2026-10-21'
+method: searched
+source: https://thea2milkcompany.com/privacy-policy
+scope: >-
+  The a2 Milk Company is a consumer dairy / infant-nutrition company, not an API provider. These signals come
+  from its Australia/New Zealand Privacy Policy (the only legal page carrying regulatory language); the Terms of
+  Use (https://thea2milkcompany.com/terms-of-use, HTTP 200) carried no candidate signal language.
+signals:
+  data_subject_request:
+    url: https://thea2milkcompany.com/privacy-policy
+    section: '5 How you can access and correct your information'
+    rights_named: [access, correction, deletion, opt-out of promotional communications, complaint]
+    evidence:
+    - source: https://thea2milkcompany.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        5.1 You can contact us and ask to view your information. Upon your request, we will inform you of what
+        personal information we store about you, and you may request the deletion or correction of that information.
+    note: >-
+      Establishes access, correction and deletion requests via a Privacy contact; no response SLA is stated on the page.
+  ai_transparency:
+    url: https://thea2milkcompany.com/privacy-policy
+    section: 'Artificial intelligence (clause 2.10)'
+    evidence:
+    - source: https://thea2milkcompany.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Where possible, we use de-identified or aggregated information for these purposes and do not make solely
+        automated decisions that have a legal or similarly significant effect on you. Further, our use of artificial
+        intelligence is subject to human oversight and other safeguards against bias.
+    note: >-
+      Discloses limited AI use (training/improving enquiry-summarisation tools), denies solely automated
+      significant decisions, and asserts human oversight. A privacy-policy disclosure, not a dedicated AI statement.
+  incident_notification:
+    url: https://thea2milkcompany.com/privacy-policy
+    section: '3 Security, confidentiality and storage practices'
+    evidence:
+    - source: https://thea2milkcompany.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        3.5 We take data breaches seriously and maintain procedures to assess and respond to suspected breaches of
+        personal information. Where an eligible data breach occurs, we will comply with our notification obligations
+        under the Privacy Acts and our internal notification guidelines and incident plans.
+    note: >-
+      Commits to statutory breach notification (Australian/NZ Privacy Acts, "eligible data breach" regime); no
+      contractual notification window is stated.
+  data_residency:
+    url: https://thea2milkcompany.com/privacy-policy
+    section: 'Sending information overseas'
+    evidence:
+    - source: https://thea2milkcompany.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        2.18 Some of the recipients we disclose your personal information to may be located in countries other than
+        Australia and New Zealand, including China, the United States, and any other country in which the a2MC Group
+        does business.
+    note: >-
+      The opposite of a residency guarantee: personal data may be disclosed to recipients in China, the US and other
+      countries; clause 2.19 adds only "reasonable steps" to ensure overseas recipients follow comparable law.
+  data_retention:
+    url: https://thea2milkcompany.com/privacy-policy
+    section: '4 Data retention'
+    evidence:
+    - source: https://thea2milkcompany.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        4.1 We generally seek to retain your personal information only for as long as it is reasonably necessary to
+        fulfil the purposes for which it was collected or as permitted by law.
+    - source: https://thea2milkcompany.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        4.4 We endeavour to destroy or de-identify your personal information in a secure manner if we no longer need
+        it for the purposes for which it was collected, unless we are otherwise required or authorised by law to
+        retain the information.
+    note: >-
+      Purpose-limited retention with secure destruction/de-identification; clause 4.2-4.3 say retention periods
+      vary by channel, but no concrete periods are published.

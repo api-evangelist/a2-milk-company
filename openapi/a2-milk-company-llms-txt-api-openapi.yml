@@ -1,0 +1,28 @@
+openapi: 3.2.0
+info:
+  title: A2 Milk Company Llms.txt API
+  version: 1.0.0
+  description: 'Operations tagged Llms.txt across 2 of this provider''s published API definitions: a2-milk-company-careers-openapi.json, a2-milk-company-openapi.yml. Each path carries the servers of the definition it was published in.'
+servers:
+- url: https://careers.thea2milkcompany.com
+tags:
+- name: Llms.txt
+paths:
+  /llms.txt:
+    get:
+      operationId: getLlmsIndex
+      summary: Site index for language models (llmstxt.org)
+      responses:
+        '200':
+          description: Markdown index.
+          content:
+            text/plain:
+              schema:
+                type: string
+      tags:
+      - Llms.txt
+    servers:
+    - url: https://careers.thea2milkcompany.com
+x-refined-from:
+- a2-milk-company-careers-openapi.json
+- a2-milk-company-openapi.yml

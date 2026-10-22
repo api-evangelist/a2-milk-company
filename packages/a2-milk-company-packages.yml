@@ -1,0 +1,9 @@
+generated: '2026-10-21'
+method: none
+source: https://registry.npmjs.org/-/v1/search?text=a2milk
+packages: []
+checked:
+- https://registry.npmjs.org/-/v1/search?text=a2milk (200, 0 results)
+- https://pypi.org/pypi/a2milk/json (404)
+- https://careers.thea2milkcompany.com/llms.txt (no SDK or CLI listed)
+note: No first-party SDK, client library or CLI is published or referenced.

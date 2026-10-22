@@ -1,0 +1,56 @@
+overlay: 1.0.0
+info:
+  title: The a2 Milk Company Careers public API — API Evangelist overlay
+  version: 1.0.0
+  x-generated: '2026-10-21'
+  x-method: generated
+extends: ../openapi/_original/a2-milk-company-openapi.yml
+actions:
+- target: $.info
+  update:
+    x-provider: The a2 Milk Company
+    x-apis-json: https://raw.githubusercontent.com/api-evangelist/a2-milk-company/refs/heads/main/apis.yml
+    x-mcp-server: https://careers.thea2milkcompany.com/mcp/
+    x-llms-txt: https://careers.thea2milkcompany.com/llms.txt
+- target: $
+  update:
+    tags:
+    - name: Search
+      description: Full-text site search.
+    - name: Content
+      description: Article and recipe listings.
+    - name: Discovery
+      description: Machine-readable site indexes (llms.txt, llms-full.txt, sitemap).
+    - name: Operations
+      description: Liveness probe.
+- target: $.paths['/api/search'].put
+  update:
+    tags:
+    - Search
+    x-mcp-tool: search_site
+- target: $.paths['/api/article-listing'].post
+  update:
+    tags:
+    - Content
+    x-mcp-tool: list_articles
+- target: $.paths['/api/recipe-listing'].post
+  update:
+    tags:
+    - Content
+    x-mcp-tool: list_recipes
+- target: $.paths['/llms.txt'].get
+  update:
+    tags:
+    - Discovery
+- target: $.paths['/llms-full.txt'].get
+  update:
+    tags:
+    - Discovery
+- target: $.paths['/sitemap.xml'].get
+  update:
+    tags:
+    - Discovery
+- target: $.paths['/health'].get
+  update:
+    tags:
+    - Operations

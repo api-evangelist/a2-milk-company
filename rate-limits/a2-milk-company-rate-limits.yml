@@ -1,0 +1,12 @@
+generated: '2026-10-21'
+method: none
+source: https://careers.thea2milkcompany.com/openapi.json
+name: The a2 Milk Company rate limits
+limit_count: 0
+limits: []
+checked:
+- https://careers.thea2milkcompany.com/openapi.json
+- https://careers.thea2milkcompany.com/llms.txt
+- https://careers.thea2milkcompany.com/health
+note: No rate limits are published in the OpenAPI or llms.txt. Unauthenticated GETs of /health and /openapi.json
+  (2026-10-21, HTTP 200) returned no RateLimit-*, X-RateLimit-* or Retry-After headers.
