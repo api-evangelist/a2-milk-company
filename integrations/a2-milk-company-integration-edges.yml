@@ -1,5 +1,5 @@
 generated: '2026-10-21'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/a2-milk-company/integrations
 - https://zapier.com/apps/the-a2-milk-company/integrations
@@ -15,9 +15,50 @@ checked:
 - https://n8n.io/integrations/a2-milk-company/
 - https://zapier.com/apps/a2-milk-company/integrations
 - https://zapier.com/apps/the-a2-milk-company/integrations
+- https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz
+- https://world.openfoodfacts.org/api/v2/search
+- https://world.openfoodfacts.org/brands.json
+- https://world.openfoodfacts.org/data
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Open Food Facts
+  partner: open-food-facts
+  partner_match: register-name
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: third-party
+  evidence: https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz
+  category: open food product database (brand owner listing)
+  contract_reference:
+    register: Open Food Facts product database, bulk CSV export (brand_owner field)
+    standard: Open Food Facts product database (ODbL open data)
+    spec_file: null
+    role: brand-owner-listed
+    registered_names:
+    - The a2 Milk Company
+    brands:
+    - the-a2-milk-company
+    - xx:A2
+    - xx:the-a2-milk-company
+    - xx:a2
+    register_countries:
+    - united-states
+    last_product_update: '2026-10-21'
+    matched_domain: null
+    matched_by: register-name
+    register_name_note: register-name 'a2milkcompany' = a2-milk-company; no wikidata P856
+    signal_note: 'participation only: the company''s products are listed in Open Food Facts under its brand_owner
+      name (largely producer / GS1 data-pool imports). Listing is not certification; product counts are context,
+      never counted.'
+    detected_by: sweep-open-food-facts-brands.py
+    detected: '2026-10-23'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  detected_by: sweep-open-food-facts-brands.py
+  first_seen: '2026-10-23'
 templates: []
 note: A dairy nutrition company; the only API is a read-only careers-site content API. No marketplace listings,
   integrations page or contract operation naming another service was found. Zapier/Make sweep left to sweep-integration-edges.py.
