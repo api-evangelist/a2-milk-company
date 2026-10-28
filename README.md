@@ -1,4 +1,4 @@
-# a2 Milk Company
+# The a2 Milk Company
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,124 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-a2 Milk Company is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.
-- https://a2milk.com/
+The a2 Milk Company is a premium branded dairy nutrition company listed on the ASX and NZX. It focuses only on products that contain the A2 beta-casein protein type. Its US consumer brand, a2 Milk®, is sold as 100% real cows' milk from grain- and grass-fed cows. The corporate site (thea2milkcompany.com) carries investor, sustainability, governance and company news, including research on infant formula made with a2-type protein. Its careers site (careers.thea2milkcompany.com) publishes a small read-only OpenAPI 3.1 description, an llms.txt index and an MCP endpoint.
+
+**Areas:** Company · Dairy · Food and Beverage · Nutrition · Infant Formula · Consumer Goods · ASX Listed · New Zealand
+
+## The a2 Milk Company on APIs.io
+
+Everything profiled for The a2 Milk Company is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/a2-milk-company/](https://apis.io/providers/a2-milk-company/)** — or go straight to one of the APIs or properties below.
+
+### APIs (7)
+
+- [The a2 Milk Company Article Listing API](https://apis.io/apis/a2-milk-company/a2-milk-company-article-listing-api/) — The Article Listing API from The a2 Milk Company — 1 operation(s) for article listing.
+- [The a2 Milk Company Health API](https://apis.io/apis/a2-milk-company/a2-milk-company-health-api/) — The Health API from The a2 Milk Company — 1 operation(s) for health.
+- [The a2 Milk Company Llms Full.txt API](https://apis.io/apis/a2-milk-company/a2-milk-company-llms-full-txt-api/) — The Llms Full.txt API from The a2 Milk Company — 1 operation(s) for llms full.txt.
+- [The a2 Milk Company Llms.txt API](https://apis.io/apis/a2-milk-company/a2-milk-company-llms-txt-api/) — The Llms.txt API from The a2 Milk Company — 1 operation(s) for llms.txt.
+- [The a2 Milk Company Recipe Listing API](https://apis.io/apis/a2-milk-company/a2-milk-company-recipe-listing-api/) — The Recipe Listing API from The a2 Milk Company — 1 operation(s) for recipe listing.
+- [The a2 Milk Company Search API](https://apis.io/apis/a2-milk-company/a2-milk-company-search-api/) — The Search API from The a2 Milk Company — 1 operation(s) for search.
+- [The a2 Milk Company Sitemap.xml API](https://apis.io/apis/a2-milk-company/a2-milk-company-sitemap-xml-api/) — The Sitemap.xml API from The a2 Milk Company — 1 operation(s) for sitemap.xml.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [A2 Milk Company Agentic Access](https://apis.io/agentic-access/a2-milk-company/a2-milk-company-agentic-access/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [A2 Milk Company Openapi Overlay](https://apis.io/overlays/a2-milk-company/a2-milk-company-openapi-overlay/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [The a2 Milk Company API Rules](https://apis.io/rules/a2-milk-company/a2-milk-company-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [A2 Milk Company Authentication](https://apis.io/security/a2-milk-company/a2-milk-company-authentication/)
+- [A2 Milk Company Domain Security](https://apis.io/security/a2-milk-company/a2-milk-company-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [A2 Milk Company Plans Pricing](https://apis.io/plans/a2-milk-company/a2-milk-company-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [A2 Milk Company Rate Limits](https://apis.io/rate-limits/a2-milk-company/a2-milk-company-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://thea2milkcompany.com/)
+- [Support](https://thea2milkcompany.com/contacts)
+- [Blog](https://a2milk.com/blog)
+- [Terms of service](https://thea2milkcompany.com/terms-of-use)
+- [Privacy policy](https://thea2milkcompany.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 31.8** — thin · rubric 0.24.0 · scored 2026-10-21
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 36.0 |
+| Contract governance | 65.5 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 13.6 |
+| Access clarity | 21.1 |
+
+**Agent readiness 28.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | unknown |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/a2-milk-company/](https://apis.io/providers/a2-milk-company/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for The a2 Milk Company: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/a2-milk-company/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
